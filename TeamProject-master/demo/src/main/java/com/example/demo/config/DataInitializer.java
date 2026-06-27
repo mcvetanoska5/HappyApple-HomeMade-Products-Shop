@@ -28,7 +28,7 @@ public class DataInitializer {
     public void init() {
         User user1 = new User("Dragana",  "Trifunova",   "dtrifunova",   passwordEncoder.encode("dtrifunova"),   Role.ROLE_ADMIN);
         User user2 = new User("Milena",   "Janeva",      "mjaneva",      passwordEncoder.encode("mjaneva"),      Role.ROLE_ADMIN);
-        User user3 = new User("Marija",   "Cvetanovska", "mcvetanovska", passwordEncoder.encode("mcvetanovska"), Role.ROLE_ADMIN);
+        User user3 = new User("Marija",   "Cvetanovska", "mcvetanovska", passwordEncoder.encode("mcvetanovska"), Role.ROLE_CUSTOMER);
         User user4 = new User("Ben",      "Affleck",     "baffleck",     passwordEncoder.encode("baffleck"),     Role.ROLE_OWNER);
 
         this.userRepository.save(user1);
